@@ -1,0 +1,77 @@
+:root {
+	--exito: #3ab65c;
+	--error: #bf333b;
+	--info: #1898c0;
+	--warning: #bc8c12;
+	--exito-hover: #2d8a46;
+	--error-hover: #962a31;
+	--info-hover: #147fa0;
+	--warning-hover: #9b7512;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background: #1c1b20;
+	color: #fff;
+	font-family: 'Inter', sans-serif;
+}
+
+.contenedor {
+	width: 90%;
+	max-width: 1000px;
+	margin: 80px auto;
+}
+
+.hero .titulo {
+	font-weight: 800;
+	font-size: 100px;
+	margin-bottom: 40px;
+}
+
+.hero .contenedor-botones {
+	display: flex;
+	gap: 20px;
+}
+
+.btn {
+	padding: 10px 20px;
+	font-size: 20px;
+	background: #000;
+	border: none;
+	cursor: pointer;
+	color: #fff;
+	border-radius: 5px;
+	transition: 0.3s ease all;
+}
+
+.btn.exito {
+	background: var(--exito);
+}
+.btn.error {
+	background: var(--error);
+}
+.btn.info {
+	background: var(--info);
+}
+.btn.warning {
+	background: var(--warning);
+}
+
+/* Hover */
+.btn.exito:hover {
+	background: var(--exito-hover);
+}
+.btn.error:hover {
+	background: var(--error-hover);
+}
+.btn.info:hover {
+	background: var(--info-hover);
+}
+.btn.warning:hover {
+	background: var(--warning-hover);
+}
